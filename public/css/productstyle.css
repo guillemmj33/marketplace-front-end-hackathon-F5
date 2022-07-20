@@ -1,9 +1,3 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .contenedor-img {
   margin-bottom: 2em;
 }
@@ -15,6 +9,11 @@ body {
 
 #productdetails {
   display: flex;
+  justify-content: center;
+}
+
+#productdescription {
+  margin-top: 5em;
 }
 
 #tiny-images {
@@ -41,10 +40,6 @@ body {
   transform: scale(1.3);
 }
 
-#productdetail {
-  margin-top: 5em;
-}
-
 .boton_personalizado {
   margin-left: 6em;
   text-decoration: none;
@@ -59,6 +54,14 @@ body {
   color: #ffffff;
   background-color: #000000;
   transition: all 0.5s ease-in-out;
+}
+
+#recommended-products {
+  margin-left: 15em;
+}
+
+#recommended-images {
+  margin-left: 15em;
 }
 
 /*# sourceMappingURL=productstyle.css.map */
