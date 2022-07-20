@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/productstyle.css">
+    <script type="text/javascript">
+
+        function $(element_id)
+        {
+            return document.getElementById(element_id);
+        }
+        function setSrc(element_id, src)
+        {
+            var element = $(element_id);
+            element.src = src;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container text-center" id="productdetails">
+        <div class="img" id="bandeja1">
+            <img src="/src/assets/Images/cestamanta1.jpg" alt="" id="main-image">
+        </div>
+        <div class="container-text" id="gallery-img">
+            <div class="col" id="productdetail">
+                <h2>BANDEJA IRREGULAR</h2>
+                <h3>15,99€</h3>
+                <p>Bandeja con forma irregular de metal. Dsiponible en varios tamaños.</p>
+            </div>
+            <div class="contenedor-img" id="tiny-images"><br>
+                <img src="/src/assets/Images/cestamanta1.jpg" onclick="setSrc('main-image', this.src)">
+                <img src="/src/assets/Images/cestamanta2.jpg" onclick="setSrc('main-image', this.src)">
+                <img src="/src/assets/Images/cestamanta3.jpg" onclick="setSrc('main-image', this.src)">
+            </div>
+        </div>
+        <div class="row">
+        </div>
+</body>
+</html>
