@@ -5,7 +5,7 @@ body {
 }
 
 .contenedor-img {
-    border: 1px solid grey;
+    margin-bottom: 2em;
 }
 .contenedor-img img {
    max-height: 150px;
@@ -43,3 +43,19 @@ body {
 #productdetail {
     margin-top: 5em;
 }
+
+.boton_personalizado{
+    margin-left: 6em;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+  }
+
+  .boton_personalizado:hover{
+    color: #ffffff;
+    background-color: #000000;
+    transition:all .5s ease-in-out;
+  }
