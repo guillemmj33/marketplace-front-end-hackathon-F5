@@ -39,3 +39,14 @@
     font-size: 3.3em;
     font-family: sans-serif;
 }
+
+.banner__p{
+    line-height: 2;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    background: border-box;
+}
+
+.wall{
+    height: 100vh;
+}
