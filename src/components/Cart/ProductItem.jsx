@@ -1,8 +1,9 @@
 const ProductItem = ({ data, addToCart }) => {
-  let { id, name, description, price } = data;
+  let { id, name, description, price, img } = data;
   return (
     <div class="card">
-      <div class="card-body">
+      <img src={img} />
+        <div class="card-body">
         <h5 class="card-title">{name}</h5>
         <p class="card-text">{description}</p>
         <h5>{price}.00 €</h5>
