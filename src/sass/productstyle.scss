@@ -41,7 +41,7 @@
 }
 
 .boton_personalizado{
-    margin-left: 6em;
+    margin-left: 1.8em;
     text-decoration: none;
     padding: 10px;
     font-size: 20px;
@@ -53,6 +53,16 @@
   .boton_personalizado:hover{
     color: #ffffff;
     background-color: #000000;
+    transition:all .5s ease-in-out;
+  }
+
+  .like {
+    margin-left: 3em;
+    color: grey;
+  }
+
+  .like:hover{
+    color: black;
     transition:all .5s ease-in-out;
   }
 
