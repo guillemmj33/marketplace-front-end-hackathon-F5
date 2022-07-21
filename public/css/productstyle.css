@@ -1,4 +1,5 @@
-@media screen and (max-width: 620px){
+@media screen and (max-width: 850px){
+
   #productdetails {
         display: flex;
         flex-direction: column;
@@ -15,6 +16,77 @@
 
   #bandeja1{
     display: none;
+  }
+
+  #productdescription{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+  }
+
+  #tiny-images{
+    padding-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+  }
+
+  #tiny-images img{
+    margin: 1em 2em;
+    border-radius: 10px;
+  }
+
+  #opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+  }
+
+  #recommended-products{
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  #recommended-images{
+    display: flex;
+    flex-direction: row;
+    margin: 1em auto !important;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #recommended-images a img{
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 400px){
+
+  #tiny-images{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #productdescription p{
+    display: none;
+  }
+
+  #recommended-images{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #recommended-images a{
+    margin-bottom: 1em;
   }
 }
 
