@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.scss';
-import logo from '../../assets/Images/happydeco-logo.png';
+// import logo from 'src/assets/Images/happydeco-logo.png';
 
 const Navbar = () => {
   return (
@@ -12,7 +12,7 @@ const Navbar = () => {
           <span className="toggler-icon bottom-bar"></span>
         </button>
         <a className="navbar-brand mx-auto" href="#">
-          <img src={logo} alt="Logo" width="120vw" />
+          {/* <img src={logo} alt="Logo" width="120vw" /> */}
         </a>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="form-inline mx-auto my-2 my-lg-0">

@@ -1,17 +1,20 @@
 const CartItem = ({ data, delFromCart }) => {
-    let { id, name, price, quantity } = data;
+    let { id, name, price, quantity, img } = data;
   
     return (
-      <div class="card" >
-        <h4 >{name}</h4>
+      <div style={{ borderBottom: "thin solid gray" }}>
+        <img class="card-img" src={img} alt=""/>
+        <p>{name}</p>
         <h5>
           ${price}.00 x {quantity} = ${price * quantity}.00
         </h5>
-        <button onClick={() => delFromCart(id)}>-1</button>
+        <div>
+        <button class="btn btn-secondary" onClick={() => delFromCart(id)}> Eliminar 1</button>
         <br />
-        <button onClick={() => delFromCart(id, true)}>Borrar Todo</button>
         <br />
+        <button class="btn btn-secondary" onClick={() => delFromCart(id, true)}>Borrar Todo</button>
         <br />
+        </div>
       </div>
     );
   };

@@ -14,7 +14,7 @@
 }
 
 .banner{
-    background-image: url(/public/photos/bandeja2.jpg);
+    //background: url(/public/photos/bandeja2.jpg)fixed center/cover;
     height: 720px;
     position: relative;
     display: flex;
@@ -74,3 +74,15 @@
     background-color: #000000;
     transition:all .5s ease-in-out;
   }
+
+  .card-products{
+    width: 10rem;
+
+  }
+ 
+  .btn{
+    border-radius: 10%;
+  }
+
+
+
