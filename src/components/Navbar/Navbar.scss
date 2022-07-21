@@ -21,13 +21,6 @@
     border: 0 !important;
   }
 
-  .navbar-toggler:active {
-    @media screen and (max-width: 700px) {
-      .navbar-icons {
-        display: none;
-      }
-    }
-  }
 
   /* Lines of the Toggler */
   .toggler-icon {
@@ -91,36 +84,115 @@
 
   .navbar-brand {
     img {
-      margin-left: -10px;
+      margin-left: -60px;
+
+      @media screen and (min-width: 993px) {
+        padding-left: 20px;
+        padding-top: 2px;
+        width: 82%;
+      }
     }
   }
 
   .navbar-collapse {
     margin-top: 20px;
+    margin-left: -40px;
+
+    @media screen and (max-width: 993px) {
+      margin-left: 0px;
+    }
+
+    li {
+      margin-top: -5px;
+      margin-right: 20px;
+
+      a {
+        @media screen and (max-width: 993px) {
+          margin-bottom: 10px;
+        }
+      
+        button {
+          border-radius: 20px;
+          border: 1px solid #d8d7d7;
+          font-family: var(--font-title);
+          font-style: normal;
+          font-weight: 500;
+          padding: 5px 30px 5px 30px;
+          background-color: var(--primary-color);
+          color: var(--black-color);
+
+          &:hover {
+            background-color: var(--secondary-color);
+            border: 1px solid #d8d7d7;
+            color: var(--white-color);
+            transition: 0.2s ease;
+          }
+
+          @media screen and (min-width: 993px) and (max-width: 1007px) {
+            display: none;
+          }
+
+          @media screen and (max-width: 993px) {
+            border-radius: 0;
+            border: none;
+            background-color: var(--white-color);
+            padding: 0;
+            font-family: var(--font-title);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 27px;
+
+            i {
+              display: none;
+            }
+
+            &:hover, &:active, &:focus {
+              background-color: var(--white-color);
+              color: var(--secondary-color);
+              border: 0;
+              border-radius: 0;
+            }
+          }
+        }
+      }
+    }
   }
 
   .navbar-nav {
+
     li {
       font-family: var(--font-title);
       font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
+      font-weight: 500;
+      font-size: 16px;
       line-height: 27px;
       padding: 15px 0 0 25px;
 
+      #home {
+        @media screen and (min-width: 993px) and (max-width: 1300px) {
+          display: none;
+        }         
+      } 
+
+      #navbarDropdown, #carrito {
+        @media screen and (min-width: 993px) and (max-width: 1150px) {
+          display: none;
+        }         
+      } 
+
+      #btn {
+        @media screen and (max-width: 993px) {
+          display: none;
+        }         
+      } 
+
       a {
         color: var(--neutral-color_4);
+        margin-top: -20px;
 
         &:hover, &:active, &:focus {
-          color: var(--primary-color);
-        }
-      }
-
-      @media screen and (max-width: 992px) {
-        .navbar-nav {
-          li {
-            display: none;
-          }
+          color: var(--secondary-color);
         }
       }
     }
@@ -131,6 +203,7 @@
 
     .dropdown-item { 
       white-space: normal; 
+      margin-top: 2px;
     }
   }
 
@@ -145,8 +218,9 @@
 
 .form-control {
   display: block;
-  width: 110%;
+  width: 140% !important;
   padding: .375rem .75rem;
+  margin-top: -10px;
   font-family: var(--font-base);
   font-size: 1rem;
   font-weight: 400;
@@ -182,7 +256,7 @@
   }
 
   //para que la barra form solo aparezca a partir de 992px
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 993px) {
     display: none;
   }
 }
@@ -192,4 +266,3 @@
     margin-left: 0px;
   }
 }
-
