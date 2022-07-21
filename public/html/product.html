@@ -23,35 +23,35 @@
 </head>
 
 <body>
-    <div class="container text-center" id="productdetails">
-        <div class="img" id="bandeja1">
-            <img src="/src/assets/Images/bandeja1.jpg" alt="" id="main-image">
+        <div class="container_text-center" id="productdetails">
+            <div class="img" id="bandeja1">
+                <img src="/src/assets/Images/bandeja1.jpg" alt="" id="main-image">
+            </div>
+            <div class="container-text" id="gallery-img">
+                <div class="col" id="productdescription">
+                    <h2>BANDEJA IRREGULAR</h2>
+                    <h3>15,99€</h3>
+                    <p>Bandeja con forma irregular de metal. Dsiponible en varios tamaños.</p>
+                </div>
+                <div class="contenedor-img" id="tiny-images"><br>
+                    <img src="/src/assets/Images/bandeja1.jpg" onclick="setSrc('main-image', this.src)">
+                    <img src="/src/assets/Images/bandeja2.jpg" onclick="setSrc('main-image', this.src)">
+                    <img src="/src/assets/Images/bandeja3.jpg" onclick="setSrc('main-image', this.src)">
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="boton_personalizado" href="#">Añadir a la cesta</a>
+                    <a class="like" href="#"><i class="fa-solid fa-heart"></i></i></a>
+                </div>
+            </div>
         </div>
-        <div class="container-text" id="gallery-img">
-            <div class="col" id="productdescription">
-                <h2>BANDEJA IRREGULAR</h2>
-                <h3>15,99€</h3>
-                <p>Bandeja con forma irregular de metal. Dsiponible en varios tamaños.</p>
-            </div>
-            <div class="contenedor-img" id="tiny-images"><br>
-                <img src="/src/assets/Images/bandeja1.jpg" onclick="setSrc('main-image', this.src)">
-                <img src="/src/assets/Images/bandeja2.jpg" onclick="setSrc('main-image', this.src)">
-                <img src="/src/assets/Images/bandeja3.jpg" onclick="setSrc('main-image', this.src)">
-            </div>
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <a class="boton_personalizado" href="#">Añadir a la cesta</a>
-                <a class="like" href="#"><i class="fa-solid fa-heart"></i></i></a>
-            </div>
+        <div class="col" id="recommended-products">
+            <h2>PRODUCTOS RECOMENDADOS</h2>
         </div>
-    </div>
-    <div class="col" id="recommended-products">
-        <h2>PRODUCTOS RECOMENDADOS</h2>
-    </div>
-    <div class="contenedor-img" id="recommended-images"><br>
-        <a href="/public/html/product2.html"><img src="/src/assets/Images/caja1.jpg"></a>
-        <a href="/public/html/product3.html"><img src="/src/assets/Images/candelabro1.jpg"></a>
-        <a href="/public/html/product4.html"><img src="/src/assets/Images/cesta1.jpg"></a>
-        <a href="/public/html/product5.html"><img src="/src/assets/Images/cestamanta1.jpg"></a>
-    </div>
+        <div class="contenedor-img" id="recommended-images"><br>
+            <a href="/public/html/product2.html"><img src="/src/assets/Images/caja1.jpg"></a>
+            <a href="/public/html/product3.html"><img src="/src/assets/Images/candelabro1.jpg"></a>
+            <a href="/public/html/product4.html"><img src="/src/assets/Images/cesta1.jpg"></a>
+            <a href="/public/html/product5.html"><img src="/src/assets/Images/cestamanta1.jpg"></a>
+        </div>
 </body>
 </html>
