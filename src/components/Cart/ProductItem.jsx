@@ -1,8 +1,10 @@
+import  './ProductItem.scss';
+
 const ProductItem = ({ data, addToCart }) => {
   let { id, name, description, price, img } = data;
   return (
     <div class="card">
-      <img src={img} />
+      <img class="card-img-top" src={img} />
         <div class="card-body">
         <h5 class="card-title">{name}</h5>
         <p class="card-text">{description}</p>
