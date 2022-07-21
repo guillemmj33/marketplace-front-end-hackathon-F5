@@ -1,17 +1,22 @@
 import './App.css';
-import { Header, Products, Contact, Footer } from './container';
+//import { Header, Products, Contact, Footer } from './container';
 import { Navbar } from './components';
+import HomePage from "./pages/HomePage";
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CrearPage from './pages/CrearPage';
 
 const App = () => {
   return (
-    <div className="app">
+    <BrowserRouter>
+      <div className="app">
       <Navbar />
-      {/* <Header />
-      <Products />
-      <Contact />
-      <Footer /> */}
-    </div>
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/crear' element={<CrearPage/>}/>
+      </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
