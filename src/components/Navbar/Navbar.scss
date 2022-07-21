@@ -128,11 +128,7 @@
             transition: 0.2s ease;
           }
 
-          @media screen and (min-width: 993px) and (max-width: 1007px) {
-            display: none;
-          }
-
-          @media screen and (max-width: 993px) {
+          @media screen and (max-width: 992px) {
             border-radius: 0;
             border: none;
             background-color: var(--white-color);
@@ -175,14 +171,14 @@
         }         
       } 
 
-      #navbarDropdown, #carrito {
+      #categorias, #carrito {
         @media screen and (min-width: 993px) and (max-width: 1150px) {
           display: none;
         }         
       } 
 
       #btn {
-        @media screen and (max-width: 993px) {
+        @media screen and (min-width: 992px) and (max-width: 992px) {
           display: none;
         }         
       } 
@@ -251,12 +247,12 @@
     padding-left: 5px;
   }
 
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 1100px){
     width: 130%;
   }
 
   //para que la barra form solo aparezca a partir de 992px
-  @media screen and (max-width: 993px) {
+  @media screen and (max-width: 992px) {
     display: none;
   }
 }
