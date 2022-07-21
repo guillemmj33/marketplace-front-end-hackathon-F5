@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom'
 import './Navbar.scss';
 // import logo from 'src/assets/Images/happydeco-logo.png';
 
@@ -20,7 +21,7 @@ const Navbar = () => {
           </form>
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a id="home" class="nav-link active" aria-current="page" href="#">Home</a>
+            <NavLink to="/" class="nav-link active" aria-current="page">Home</NavLink>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="categorias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -89,14 +90,16 @@ const Navbar = () => {
               </ul>
             </li>
             <li class="nav-item">
-              <a id="carrito" class="nav-link active" aria-current="page" href="#">Carrito de compra</a>
+              <NavLink to='/cart'><a id="carrito" class="nav-link active" aria-current="page" href="#">Carrito de compra</a></NavLink>
             </li>
           </ul>
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#" id="btn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <button className="upload-product" type="submit"><i class="fa-solid fa-circle-plus"></i>Subir producto</button>
-              </a>
+              <NavLink to='/add'>
+                  <button className="upload-product" >
+                  <i class="fa-solid fa-circle-plus"></i>Subir producto
+                  </button>
+              </NavLink>
             </li>
           </ul>
         </div>
