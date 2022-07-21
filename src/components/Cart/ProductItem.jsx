@@ -1,13 +1,18 @@
 const ProductItem = ({ data, addToCart }) => {
-    let { id, name, price } = data;
-    return (
-      <div style={{ border: "thin solid gray", padding: "1rem" }}>
-        <h4>{name}</h4>
-        {/* <p>{decription}</p> */}
+  let { id, name, description, price } = data;
+  return (
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{name}</h5>
+        <p class="card-text">{description}</p>
         <h5>{price}.00 €</h5>
+        <a  class="btn btn-primary">
+          Go somewhere
+        </a>
         <button onClick={() => addToCart(id)}>Añadir al Carrito</button>
       </div>
-    );
-  };
-  
-  export default ProductItem;
+    </div>
+  );
+};
+
+export default ProductItem;

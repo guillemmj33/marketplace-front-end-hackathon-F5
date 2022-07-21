@@ -32,11 +32,26 @@ const ShoppingCart = () => {
     <div>
       <h2>Carrito de Compras</h2>
       <h3>Productos</h3>
-      <article className="box grid-responsive">
+      {/* <div class="card" style="width: 18rem;"> */}
+            {/* <img src="/src/assets/Images/cortina1.jpg" class="card-img-top" alt="..."> */}
+            {/* <div class="card-body">
+              <h5 class="card-title">CORTINA LINO LAVADO</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+      </div> */}
+
+      <article className="card">
         {products.map((product) => (
           <ProductItem key={product.id} data={product} addToCart={addToCart} />
         ))}
       </article>
+
+      {/* <article className="box grid-responsive">
+        {products.map((product) => (
+          <ProductItem key={product.id} data={product} addToCart={addToCart} />
+        ))}
+      </article> */}
       <h3>Carrito</h3>
       <article className="box">
         <button onClick={clearCart}>Limpiar Carrito</button>
